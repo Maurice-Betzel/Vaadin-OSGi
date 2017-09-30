@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>reactor</artifactId>
+        <groupId>net.betzel.osgi.karaf.vaadin</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>net.betzel.osgi.karaf.vaadin</groupId>
+    <artifactId>parent</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0</version>
+
+    <description>Bill-of-materials</description>
+
+    <properties>
+        <osgi.core.version>6.0.0</osgi.core.version>
+        <osgi.annotation.version>6.0.1</osgi.annotation.version>
+        <jsoup.version>1.8.3</jsoup.version>
+        <karaf.version>4.1.2</karaf.version>
+        <vaadin.version>8.1.5</vaadin.version>
+        <javax.servlet.api>3.1.0</javax.servlet.api>
+        <bnd.maven.plugin>3.3.0</bnd.maven.plugin>
+        <maven.jar.plugin>3.0.2</maven.jar.plugin>
+        <maven.clean.plugin>3.0.0</maven.clean.plugin>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <vaadin.widgetset.mode>local</vaadin.widgetset.mode>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.vaadin</groupId>
+                <artifactId>vaadin-bom</artifactId>
+                <version>${vaadin.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

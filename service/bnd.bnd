@@ -1,0 +1,6 @@
+Bundle-Name: ${project.name}
+Bundle-Version: ${project.version}
+Bundle-SymbolicName: ${project.groupId}.${project.artifactId}
+Export-Package: net.betzel.osgi.karaf.vaadin.service
+Import-Package: *
+Web-ContentPath: /test2
